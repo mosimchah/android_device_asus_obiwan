@@ -60,11 +60,11 @@ PRODUCT_COPY_FILES += \
 
 # Lineage Permissions
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    vendor/aicp/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.asus_kona
+#PRODUCT_PACKAGES += \
+#    lineage.touch@1.0-service.asus_kona
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -73,3 +73,9 @@ $(call inherit-product, device/asus/sm8250-common/common.mk)
 
 # Inherit from vendor blobs
 #$(call inherit-product, vendor/asus/obiwan/obiwan-vendor.mk)
+
+# TWRP Support
+-include device/twrp/obiwan/twrp.mk
+
+# Gapps
+$(call inherit-product-if-exists, vendor/gapps/config.mk)

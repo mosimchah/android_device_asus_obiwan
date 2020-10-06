@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_obiwan.mk
+    $(LOCAL_DIR)/aicp_obiwan.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_obiwan-user \
-    lineage_obiwan-userdebug \
-    lineage_obiwan-eng
+    aicp_obiwan-user \
+    aicp_obiwan-userdebug \
+    aicp_obiwan-eng

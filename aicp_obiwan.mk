@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from instantnoodlep device
 $(call inherit-product, device/asus/obiwan/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Aicp stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := obiwan
 PRODUCT_MANUFACTURER := asus
 PRODUCT_MODEL := ASUS_I003D
-PRODUCT_NAME := lineage_obiwan
+PRODUCT_NAME := aicp_obiwan
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
@@ -40,3 +40,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=ZS661KS
 
 BUILD_FINGERPRINT := "asus/WW_I003D/ASUS_I003_1:10/QKQ1.200419.002/17.0823.2008.78-0:user/release-keys"
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Moshe Barash (mosimchah)"
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
