@@ -1085,7 +1085,7 @@ vendor/etc/US/ASUS/Launcher/default_workspace/phone_workspace.xml
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/usb_host_switch.sh
 vendor/etc/usb_pd_rt1715.sh
--vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
+vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
 -vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
 -vendor/etc/vintf/manifest/android.hardware.usb@1.1-service.xml
